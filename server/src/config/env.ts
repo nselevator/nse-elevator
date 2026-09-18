@@ -9,7 +9,7 @@ export const config = {
   NODE_ENV: process.env.NODE_ENV || 'development',
   MONGODB_URI:
     process.env.MONGODB_URI ||
-    'mongodb+srv://newsahyadrielevator01_db_user:S8OB6dpQx5dgYiFj@cluster0.9taavdi.mongodb.net/vanguard_elevator?retryWrites=true&w=majority',
+    'mongodb+srv://nselevator21_db_user:F1NB36omS6bqmsCf@cluster0.l75voz7.mongodb.net/vanguard_elevator?retryWrites=true&w=majority',
   EMAIL_SERVICE_API_KEY: process.env.EMAIL_SERVICE_API_KEY || '',
   EMAIL_FROM: process.env.EMAIL_FROM || 'office.pune@nsei.in',
   LEAD_NOTIFICATION_EMAIL: process.env.LEAD_NOTIFICATION_EMAIL || 'office.pune@nsei.in',

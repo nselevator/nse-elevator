@@ -9,7 +9,7 @@ try {
 }
 
 const ATLAS_URI =
-  'mongodb+srv://newsahyadrielevator01_db_user:S8OB6dpQx5dgYiFj@cluster0.9taavdi.mongodb.net/vanguard_elevator?retryWrites=true&w=majority';
+  'mongodb+srv://nselevator21_db_user:F1NB36omS6bqmsCf@cluster0.l75voz7.mongodb.net/vanguard_elevator?retryWrites=true&w=majority';
 
 const MONGODB_URI = process.env.MONGODB_URI || ATLAS_URI;
 
