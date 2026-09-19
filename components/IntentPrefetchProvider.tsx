@@ -57,8 +57,8 @@ export function IntentPrefetchProvider() {
       // 2. Prefetch API payload into SWR cache if matching route
       const apiEndpoint = ROUTE_API_MAP[cleanPath];
       if (apiEndpoint) {
-        const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:5000/api';
-        prefetchPayload(`${apiBase}${apiEndpoint.replace('/api', '')}`);
+        const apiBase = (process.env.NEXT_PUBLIC_API_BASE_URL || '').replace(/\/api\/?$/, '');
+        prefetchPayload(`${apiBase}${apiEndpoint}`);
       }
     };
 

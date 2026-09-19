@@ -8,7 +8,9 @@ import {
   FALLBACK_TESTIMONIALS,
 } from './fallbackData';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:5000/api';
+const API_BASE_URL =
+  process.env.NEXT_PUBLIC_API_BASE_URL ||
+  (typeof window !== 'undefined' ? '/api' : 'http://127.0.0.1:3000/api');
 
 // Helper for standard API response unwrapping
 async function fetchFromApi<T>(endpoint: string, fallbackData?: T): Promise<T | null> {

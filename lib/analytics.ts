@@ -206,8 +206,7 @@ export function trackEvent({
     timestamp: new Date().toISOString(),
   });
 
-  // 2. Post to self-owned MongoDB telemetry endpoint in background (non-blocking)
-  const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:5000/api';
+  const apiBase = (process.env.NEXT_PUBLIC_API_BASE_URL || '').replace(/\/api\/?$/, '') + '/api';
   const payload = {
     eventType,
     pageUrl,
@@ -407,7 +406,7 @@ export function initSessionLocation(): void {
       return; // Already resolved in this session
     }
 
-    const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:5000/api';
+    const apiBase = (process.env.NEXT_PUBLIC_API_BASE_URL || '').replace(/\/api\/?$/, '') + '/api';
     const anonId = getAnonymousId();
 
     fetch(`${apiBase}/events/location`, {
