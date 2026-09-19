@@ -46,11 +46,11 @@ export default async function BlogPostPage({ params }: { params: { postSlug: str
     publisher: {
       '@type': 'Organization',
       name: 'NSE – New Sahyadri Elevator',
-      url: 'https://nsei.in',
+      url: 'https://www.newsahyadrielevator.com',
     },
     datePublished: post.publishedAt || post.datePublished,
     dateModified: post.updatedAt || post.dateModified,
-    mainEntityOfPage: `https://nsei.in/blog/${params.postSlug}`,
+    mainEntityOfPage: `https://www.newsahyadrielevator.com/blog/${params.postSlug}`,
   };
 
   return (

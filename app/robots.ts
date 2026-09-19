@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/_next/', '/admin/'],
       },
     ],
-    sitemap: 'https://nsei.in/sitemap.xml',
+    sitemap: 'https://www.newsahyadrielevator.com/sitemap.xml',
   };
 }

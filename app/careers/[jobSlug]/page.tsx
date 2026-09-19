@@ -42,7 +42,7 @@ export default async function JobDetailPage({ params }: { params: { jobSlug: str
     hiringOrganization: {
       '@type': 'Organization',
       name: 'NSE – New Sahyadri Elevator',
-      sameAs: 'https://nsei.in',
+      sameAs: 'https://www.newsahyadrielevator.com',
     },
     jobLocation: {
       '@type': 'Place',

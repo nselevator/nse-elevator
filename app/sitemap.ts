@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 
-const BASE_URL = 'https://nsei.in';
+const BASE_URL = 'https://www.newsahyadrielevator.com';
 
 const serviceSlugs = [
   'elevator-maintenance',

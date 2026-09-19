@@ -44,7 +44,7 @@ export default async function LocationPage({ params }: { params: { locationSlug:
     '@context': 'https://schema.org',
     '@type': 'HomeAndConstructionBusiness',
     name: `NSE – New Sahyadri Elevator - ${loc.cityName}`,
-    image: 'https://nsei.in/fleet.jpg',
+    image: 'https://www.newsahyadrielevator.com/fleet.jpg',
     telephone: loc.branchPhone || '+91 90499 94679',
     priceRange: '₹₹₹',
     address: {
